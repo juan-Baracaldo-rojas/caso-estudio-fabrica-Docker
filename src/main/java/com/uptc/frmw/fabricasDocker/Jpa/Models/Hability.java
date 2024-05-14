@@ -1,7 +1,18 @@
 package com.uptc.frmw.fabricasDocker.Jpa.Models;
 
+import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+
+
+
+@Entity
+@Table(name = "habilidades")
 public class Hability {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "IdHabilidades")
     private long idHability;
+    @Column(name="nombreHabilidades")
     private String name;
 
     public Hability() {

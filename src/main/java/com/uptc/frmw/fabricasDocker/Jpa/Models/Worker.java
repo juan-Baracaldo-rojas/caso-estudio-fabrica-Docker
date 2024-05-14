@@ -1,12 +1,22 @@
 package com.uptc.frmw.fabricasDocker.Jpa.Models;
 
-import java.util.Date;
+import jakarta.persistence.*;
 
+import java.util.Date;
+@Entity
+@Table(name = "trabajador")
 public class Worker {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "IdTrabajador")
     private long idWorker;
+    @Column(name = "Nombre")
     private String name;
+    @Column(name = "Apellido")
     private String last_name;
+    @Column(name ="Fecha_Nacimiento")
     private Date boringDate;
+    @Column(name= "Direccion")
     private String adress;
 
     public Worker() {

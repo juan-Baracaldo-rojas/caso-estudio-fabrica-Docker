@@ -1,4 +1,4 @@
-package com.uptc.frmw.caso_estudio_fabricas_docker;
+package com.uptc.frmw.fabricasDocker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
